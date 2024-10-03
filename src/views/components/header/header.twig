@@ -9,6 +9,7 @@
 <header class="store-header">
   {# Top Nav #}
   <div class="top-navbar">
+  
     <div class="container flex justify-between">
       <div class="flex-1 flex items-center gap-2">
           {# Footer Menu #}
@@ -17,7 +18,7 @@
           {% endif %}
 
           {# Language & Currency Component #}
-          <div class="header-buttons">
+          <div class="header-buttons ">
               {% if store.settings.is_multilingual or store.settings.currencies_enabled %}
                   <button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
                       <span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
@@ -36,7 +37,8 @@
           {% endif %}
 
           {# Search bar #}
-          <div class="header-search flex-1">
+          <div class="header-search flex-1 ">
+          
             <salla-search inline oval height="36"></salla-search>
           </div>
       </div>
@@ -46,8 +48,8 @@
   </div>
 
   {# Main Nav #}
-  <div id="mainnav" class="main-nav-container shadow-default bg-white">
-      <div class="inner bg-inherit">
+  <div id="mainnav" class="main-nav-container shadow-default bg-white ">
+      <div class="inner bg-inherit scroll-mt-3">
           <div class="container">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">

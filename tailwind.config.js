@@ -66,14 +66,14 @@ module.exports = {
                 '20': '5rem',
             },
             boxShadow          : {
-                'default' : '5px 10px 30px #2B2D340D;',
-                'top'     : '0px 0px 10px #0000001A;',
-                'md'      : '5px 10px 99px #2B2D340D',
+                'default'       : '5px 10px 30px #2B2D340D;',
+                'top'           : '0px 0px 10px #0000001A;',
+                'md'            : '5px 10px 99px #2B2D340D',
                 'dropdown'      : '0 4px 8px rgba(161, 121, 121, 0.07)',
-                'light'   : '0px 4px 15px rgba(1, 1, 1, 0.06)',
-                'huge'    : '0px 3px 6px #00000029',
-                'progress': '0 5px 15px rgba(92, 213, 196, 0.4)',
-                'mobile': 'rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 18px, rgb(0 0 0 / 9%) -15px 10px 7px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -25px 20px 20px',
+                'light'         : '0px 4px 15px rgba(1, 1, 1, 0.06)',
+                'huge'          : '0px 3px 6px #00000029',
+                'progress'      : '0 5px 15px rgba(92, 213, 196, 0.4)',
+                'mobile'        : 'rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 18px, rgb(0 0 0 / 9%) -15px 10px 7px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -20px 10px 20px, rgb(0 0 0 / 9%) -25px 20px 20px',
             },
             width              : {
                 '18': '4.5rem',
@@ -127,6 +127,9 @@ module.exports = {
             animation: {
                 slideUpFromBottom: 'slideUpFromBottom .6s linear',
                 slideDownFromBottom: 'slideDownFromBottom .6s linear',
+            },
+            scrollMargin: {
+                '3': '3rem',
             },
         },
     },
