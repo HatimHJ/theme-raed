@@ -7,6 +7,7 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
+ {{  theme.setting.get('dark_mod_opt') ? 'yes':'no'  }}
     {% component home %}
 {% endblock %}
 {% block scripts %}

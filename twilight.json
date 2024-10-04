@@ -193,7 +193,7 @@
             "id": "dark_mod_opt",
             "format": "switch",
             "required": false,
-            "value": false,
+            "value": true,
             "selected": false
         }
     ],
