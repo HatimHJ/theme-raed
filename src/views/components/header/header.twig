@@ -29,7 +29,11 @@
               
               <h2>
               
-            {{  theme.setting.get('dark_mod_opt') ? 'test':'tets'  }}
+            {% if theme.setting.get('show_tags') %}
+                yes
+            {% else %}
+                no
+            {% endif %}
               </h2>
 
             {# {% if theme.setting.get('dark_mode_opt')  %}
