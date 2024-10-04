@@ -34,7 +34,8 @@
             "format": "switch",
             "required": false,
             "value": false,
-            "selected": false
+            "selected": false,
+            "public": false
         },
         {
             "type": "boolean",
@@ -189,12 +190,12 @@
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "تفعيل  نظام القالب الغامق",
-            "description": "هذه الخاصية تمكنك من تكبير الصورة لتسهل رؤية المزيد من التفاصيل بها",
+            "description": "تفعيل  نظام القالب الغامق",
             "id": "dark_mod_opt",
             "format": "switch",
             "required": false,
             "value": true,
-            "selected": false
+            "selected": true
         }
     ],
     "components": [
