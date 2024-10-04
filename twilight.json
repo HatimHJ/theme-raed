@@ -186,16 +186,15 @@
             "selected": false
         },
         {
-            "id": "dark_mode_opt",
             "type": "boolean",
-            "format": "checkbox",
+            "icon": "sicon-toggle-off",
             "label": "تفعيل  نظام القالب الغامق",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-check-square",
-            "value": true,
-            "selected": false,
-            "required": false
+            "description": "هذه الخاصية تمكنك من تكبير الصورة لتسهل رؤية المزيد من التفاصيل بها",
+            "id": "dark_mod_opt",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
         }
     ],
     "components": [
