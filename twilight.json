@@ -196,21 +196,6 @@
             "required": false,
             "value": true,
             "selected": true
-        },
-        {
-            "id": "darkMode",
-            "type": "string",
-            "format": "text",
-            "label": "الوضع الغامق",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "Placeholder text ..",
-            "icon": "sicon-format-text-alt",
-            "value": null,
-            "multilanguage": false,
-            "required": false,
-            "minLength": 6,
-            "maxLength": 30
         }
     ],
     "components": [
