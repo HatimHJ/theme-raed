@@ -191,7 +191,7 @@
             "icon": "sicon-toggle-off",
             "label": "تفعيل  نظام القالب الغامق",
             "description": "تفعيل  نظام القالب الغامق",
-            "id": "dark_mod_opt",
+            "id": "darkModOpt",
             "format": "switch",
             "required": false,
             "value": true,
