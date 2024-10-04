@@ -184,6 +184,18 @@
             "required": false,
             "value": false,
             "selected": false
+        },
+        {
+            "id": "dark_mode_opt",
+            "type": "boolean",
+            "format": "checkbox",
+            "label": "تفعيل  نظام القالب الغامق",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-check-square",
+            "value": true,
+            "selected": false,
+            "required": false
         }
     ],
     "components": [
