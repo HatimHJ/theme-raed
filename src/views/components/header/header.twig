@@ -43,10 +43,10 @@
           
             <salla-search inline oval height="36"></salla-search>
           </div>
-            {{  theme.settings.get('darkModOpt') ? '<i class="sicon-sun rtl:ml-1 ltr:mr-1"></i><i class="sicon-moon rtl:ml-1 ltr:mr-1"></i> ': ''  }}
- 
-            {% component 'header.darkMode' %}
-
+          {% component 'header.darkMode' %}
+          <div class="">
+            {# {% component 'header.darkMode' %} #}
+          </div>
       </div>
 
       <salla-contacts is-header></salla-contacts>
