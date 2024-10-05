@@ -27,18 +27,10 @@
                   <salla-localization-modal></salla-localization-modal>
               {% endif %}
               
-              <h2>
+              <h6>
               
-            {% if theme.settings.get('darkMode') == 'yessss' %}
-                yes
-            {% else %}
-                no
-            {% endif %}
-              </h2>
-
-            {# {% if theme.setting.get('dark_mode_opt')  %}
-              <h1>test</h1>
-            {% endif %} #}
+            {{  theme.settings.get('darkModOpt') ? '<i class="sicon-location rtl:ml-1 ltr:mr-1"></i>':'no'  }}
+              </h6>
 
           </div>
 
