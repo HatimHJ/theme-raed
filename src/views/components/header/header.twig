@@ -44,7 +44,6 @@
             <salla-search inline oval height="36"></salla-search>
           </div>
           {% component 'header.menu' %}
-          {% component 'header.dark-mode' %}
       </div>
 
       <salla-contacts is-header></salla-contacts>
@@ -54,6 +53,7 @@
   {# Main Nav #}
   <div id="mainnav" class="main-nav-container shadow-sm bg-white ">
       <div class="inner bg-inherit scroll-mt-3">
+          {% component 'header.dark-mode' %}
           <div class="container">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">
