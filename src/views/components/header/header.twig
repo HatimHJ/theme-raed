@@ -11,7 +11,7 @@
   <div class="top-navbar">
   
     <div class="container flex justify-between">
-      <div class="flex-1 flex items-center gap-2">
+      <div class="flex-1 flex items-center justify-center gap-2">
           {# Footer Menu #}
           {% if important_links %}
             <salla-menu source="footer" topnav></salla-menu>
@@ -27,11 +27,7 @@
                   <salla-localization-modal></salla-localization-modal>
               {% endif %}
               
-              <span>
-              
-            {{  theme.settings.get('darkModOpt') ? '<i class="sicon-sun rtl:ml-1 ltr:mr-1"></i><i class="sicon-moon rtl:ml-1 ltr:mr-1"></i> ': ''  }}
-              </span>
-
+            
           </div>
 
           {# Scopes | Branches #}
@@ -43,13 +39,13 @@
           {% endif %}
 
           {# Search bar #}
-          <div class="header-search  w-6 ">
+          <div class="header-search   ">
           
             <salla-search inline oval height="36"></salla-search>
           </div>
-          <div class="  ">
+          <div class="">
           
-            {% component 'header.menu' %}
+            {% component 'header.dark-mode' %}
           </div>
       </div>
 
