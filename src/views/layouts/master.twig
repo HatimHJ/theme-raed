@@ -74,7 +74,9 @@
           transition: opacity 0.75s, visibility 0.75s;
           z-index: 9999;
       }
-
+      *{
+        transition: .2s ease;
+      }
       .loader-init--hidden {
           opacity: 0;
           visibility: hidden;
@@ -109,11 +111,20 @@
           });
           
 const toggleButton = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
 const Appo = [...document.getElementsByTagName('body')][0];
 toggleButton.addEventListener('click', () => {
   console.log(Appo)
-    const isDark = Appo.classList.add('dark');
+    const isDark = Appo.classList.toggle('dark');
     // Save the user preference
+    // Change the icon based on the theme
+            if (isDark) {
+                themeIcon.classList.remove('sicon-sun');
+                themeIcon.classList.add('sicon-moon');
+            } else {
+                themeIcon.classList.add('sicon-sun');
+                themeIcon.classList.remove('sicon-moon');
+            }
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
