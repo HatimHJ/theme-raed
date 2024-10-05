@@ -107,6 +107,16 @@
 		  if (!document.querySelector(".loader-init")) return;
           document.body.removeChild(loader);
           });
+          
+const toggleButton = document.getElementById('theme-toggle');
+const Appo = [...document.getElementsByTagName('body')][0];
+toggleButton.addEventListener('click', () => {
+  console.log(Appo)
+    const isDark = Appo.classList.add('dark');
+    // Save the user preference
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
       });
     </script>
   
@@ -140,7 +150,7 @@
     {# tracking services, custom css feature. #}
     {% hook 'head:end' %}
 </head>
-<body id="app" class="overflow-x-hidden {% hook 'body:classes' %}
+<body id="app" class="dark:bg-black overflow-x-hidden {% hook 'body:classes' %}
   {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
   {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
   {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}

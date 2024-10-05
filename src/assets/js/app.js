@@ -315,3 +315,5 @@ isElementLoaded(selector){
 }
 
 salla.onReady(() => (new App).loadTheApp());
+
+
