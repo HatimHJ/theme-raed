@@ -145,6 +145,7 @@
   {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
   {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
   ">
+  {% component "header.advertisement" %}
   <div class="loader-init"></div>
 <noscript>
     To get full functionality of this site you need to enable JavaScript. Here is how
@@ -154,6 +155,7 @@
 <div class="app-inner flex flex-col min-h-full">
     {% hook 'body:start' %}
     {% component 'header.header' %}
+    
     {% block content %}{% endblock %}
     {% component 'footer.footer' %}
 </div>
