@@ -74,9 +74,6 @@
           transition: opacity 0.75s, visibility 0.75s;
           z-index: 9999;
       }
-      *{
-        transition: .2s ease;
-      }
       .loader-init--hidden {
           opacity: 0;
           visibility: hidden;
@@ -173,7 +170,7 @@ toggleButton.addEventListener('click', () => {
     <a href="https://www.enable-javascript.com/" rel="noreferrer"
        target="_blank">To enable JavaScript on webpage</a>.
 </noscript>
-<div class="app-inner flex flex-col min-h-full">
+<div class="app-inner dark:bg-[#1d1f1f] flex flex-col min-h-full">
     {% hook 'body:start' %}
     {% component 'header.header' %}
     

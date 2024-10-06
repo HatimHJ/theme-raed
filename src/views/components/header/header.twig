@@ -6,11 +6,11 @@
 | cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
 #}
 {% set important_links = theme.settings.get('important_links') %}
-<header class="store-header">
+<header class="store-header ">
   {# Top Nav #}
-  <div class="top-navbar">
+  <div class="top-navbar ">
   
-    <div class="container flex justify-between">
+    <div class="container flex justify-between ">
       <div class="flex-1 flex items-center justify-center gap-2">
           {# Footer Menu #}
           {% if important_links %}
@@ -18,7 +18,7 @@
           {% endif %}
 
           {# Language & Currency Component #}
-          <div class="header-buttons ">
+          <div class="header-buttons dark:bg-slate-50 rounded-2xl">
               {% if store.settings.is_multilingual or store.settings.currencies_enabled %}
                   <button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
                       <span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
@@ -32,16 +32,16 @@
 
           {# Scopes | Branches #}
           {% if store.scope %}
-              <button class="btn--rounded-gray dark:bg-dark"
+              <button class="btn--rounded-gray dark:bg-dark "
                       onclick="salla.event.dispatch('scopes::open', {'mode': 'default'})">
                   <i class="sicon-location rtl:ml-1 ltr:mr-1"></i> {{ store.scope.name }}
               </button>
           {% endif %}
 
           {# Search bar #}
-          <div class="header-search   ">
+          <div class="header-search   dark:bg-slate-50 rounded-2xl ">
           
-            <salla-search inline oval height="36"></salla-search>
+            <salla-search inline oval height="36" class=""></salla-search>
           </div>
           {% component 'header.menu' %}
       </div>
@@ -51,7 +51,7 @@
   </div>
 
   {# Main Nav #}
-  <div id="mainnav" class="main-nav-container shadow-sm bg-white ">
+  <div id="mainnav" class="main-nav-container shadow-sm  dark:shadow-lime-50 dark:bg-[#1d1f1f] dark:text-white transition-none">
       <div class="inner bg-inherit scroll-mt-3">
           <div class="container">
               <div class="flex items-stretch justify-between relative">
@@ -62,6 +62,9 @@
                       <style>
                       a[href*=offer]{
                         color:#000 !important; 
+                      }
+                      .dark a[href*=offer]{
+                        color:#fff !important; 
                       }
                       </style>
                       <a class="navbar-brand" href="{{ store.url }}">
