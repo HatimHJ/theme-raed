@@ -1,4 +1,17 @@
   
+.dark .s-products-slider{
+  &-wrapper{
+    background-color: black;
+  }
+  &-slider{
+    background-color: black;
+  }
+  &-card{
+background-color: black;
+  }
+}
+
+
 // Wishlist Product entry
 .product-entry {
   @apply h-full transition-shadow duration-300 bg-white hover:shadow-default rounded-lg justify-between flex relative;
@@ -301,6 +314,9 @@
 	  }
 	} 
 }
+
+
+
 
 
 // Horizontal card
