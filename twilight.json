@@ -826,7 +826,7 @@
             "path": "new_feature",
             "fields": [
                 {
-                    "id": "title_for _feature",
+                    "id": "title_for_feature",
                     "type": "static",
                     "format": "title",
                     "label": "نص من التاجر",
