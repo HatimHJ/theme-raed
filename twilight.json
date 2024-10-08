@@ -818,6 +818,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "0a1dc971-b7f2-4342-85ae-ae591371c55f",
+            "title": "ميزة جديدة",
+            "icon": "sicon-store",
+            "path": "new_feature",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
