@@ -824,7 +824,17 @@
             "title": "ميزة جديدة",
             "icon": "sicon-store",
             "path": "new_feature",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title_for _feature",
+                    "type": "static",
+                    "format": "title",
+                    "label": "نص من التاجر",
+                    "value": null,
+                    "variant": "h1",
+                    "icon": "sicon-format-text"
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
