@@ -823,7 +823,7 @@
             "key": "0a1dc971-b7f2-4342-85ae-ae591371c55f",
             "title": "ميزة جديدة",
             "icon": "sicon-store",
-            "path": "new_feature",
+            "path": "home.new_feature",
             "fields": [
                 {
                     "id": "title_for_feature",
