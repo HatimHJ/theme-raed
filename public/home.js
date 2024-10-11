@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ (() => {
 
-eval("console.log('hatim');\n\n//# sourceURL=webpack://theme-raed/./src/assets/js/custom.js?");
+eval("console.log('hatim');\nvar slides = document.querySelector('.custom-slider .slides');\nvar slide = document.querySelectorAll('.custom-slider .slide');\nvar prevButton = document.getElementById('prev');\nvar nextButton = document.getElementById('next');\nvar index = 0;\nfunction showSlide(n) {\n  if (n >= slide.length) {\n    index = 0;\n  } else if (n < 0) {\n    index = slide.length - 1;\n  }\n  slides.style.transform = \"translateX(\".concat(-index * 100, \"%)\");\n}\nprevButton.addEventListener('click', function () {\n  index--;\n  showSlide(index);\n});\nnextButton.addEventListener('click', function () {\n  index++;\n  showSlide(index);\n});\n\n// Optional: Auto slide every 5 seconds\nsetInterval(function () {\n  index++;\n  showSlide(index);\n}, 5000);\n\n//# sourceURL=webpack://theme-raed/./src/assets/js/custom.js?");
 
 /***/ }),
 

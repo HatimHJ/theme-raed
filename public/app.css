@@ -5991,6 +5991,42 @@ lite-youtube.lyt-activated > .lty-playbtn {
   white-space: nowrap;
   width: 1px;
 }
+.custom-slider {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background-color: bisque;
+}
+.custom-slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.custom-slider .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.custom-slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+.custom-slider .navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.custom-slider .button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.custom-slider .button:hover {
+  background-color: rgb(255, 255, 255);
+}
 .before\:text-orange-300::before{content:var(--tw-content);--tw-text-opacity:1;color:rgba(253, 186, 116, 1);color:rgba(253, 186, 116, var(--tw-text-opacity))}
 .first\:rounded-t-md:first-child{border-top-left-radius:0.375rem;border-top-right-radius:0.375rem}
 .first\:pt-16:first-child{padding-top:4rem}

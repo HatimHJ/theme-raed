@@ -1,9 +1,9 @@
 .custom-slider {
     position: relative;
-    width: 80%;
-    max-width: 600px;
+    width: 100vw;
     overflow: hidden;
-    border-radius: 10px;
+    // border-radius: 10px;
+    background-color: bisque;
 }
 
 .custom-slider .slides {
