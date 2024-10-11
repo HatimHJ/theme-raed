@@ -15,7 +15,7 @@
   \*********************************/
 /***/ (() => {
 
-eval("console.log('aaaaaaa');\n\n//# sourceURL=webpack://theme-raed/./src/assets/js/custom.js?");
+eval("console.log('hatim');\n\n//# sourceURL=webpack://theme-raed/./src/assets/js/custom.js?");
 
 /***/ })
 
