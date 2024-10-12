@@ -1,10 +1,10 @@
 {
     "name": {
-        "ar": "رائد",
-        "en": "Theme Raed"
+        "ar": "Theme oop9g5iv",
+        "en": "learning theme"
     },
-    "repository": "https://github.com/SallaApp/theme-raed",
-    "author_email": "support@salla.sa",
+    "repository": "https://github.com/HatimHJ/theme-raed",
+    "author_email": "hatimaljelwi@gmail.com",
     "features": [
         "mega-menu",
         "fonts",
@@ -870,9 +870,9 @@
             ]
         }
     ],
-    "support_url": "https://salla.com/",
+    "support_url": "",
     "description": {
-        "ar": "مجموعة كبيرة من المزايا لدعم تجارتك وتقديم تجربة تسوق مثيرة لعملائك",
-        "en": "A wide range of features to support your business and provide an exciting shopping experience for your customers"
+        "ar": null,
+        "en": null
     }
 }
