@@ -868,7 +868,7 @@
                     "maxLength": 5
                 },
                 {
-                    "id": "height",
+                    "id": "slider_height",
                     "type": "string",
                     "format": "text",
                     "label": "height",
