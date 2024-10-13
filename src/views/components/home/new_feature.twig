@@ -1,20 +1,18 @@
-{# {% for slider in component.slider_collection %} #}
- <h1>  {{ slider.slider_title_1 }} </h1>
+{% for slider in component.slider_collection %}
+ 
  <div class="slider">
-  <div class="slide">
-    <img src="image1.jpg" alt="Slide 1">
-    <div class="caption">النص الأول هنا</div>
-  </div>
-  <div class="slide">
-    <img src="image2.jpg" alt="Slide 2">
-    <div class="caption">النص الثاني هنا</div>
+  <div class="slide" style="height:{{slider.height | 200px}}">
+
+    <img src="{{ slider.slider_image_1 }}" alt="{{ slider.slider_title_1 }}">
+    <div class="caption">{{ slider.slider_title_1 }}</div>
   </div>
   <!-- أضف المزيد من الشرائح -->
 </div>
+{% endfor %}
 <style>
 .slider {
   position: relative;
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -23,6 +21,7 @@
 .slide {
   display: none;
   position: relative;
+  height:300px;
 }
 
 .slide img {
@@ -66,4 +65,3 @@ function nextSlide() {
 setInterval(nextSlide, 3000); // تغيير الشريحة كل 3 ثوانٍ
 </script>
 
-{# {% endfor %} #}
