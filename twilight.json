@@ -836,21 +836,6 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "slider_collection.height",
-                            "type": "number",
-                            "format": "integer",
-                            "inputType": "number",
-                            "label": "height",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Input an integer number between 5 and 50.",
-                            "icon": "sicon-hashtag",
-                            "value": null,
-                            "required": false,
-                            "minimum": null,
-                            "maximum": null
-                        },
-                        {
                             "id": "slider_collection.slider_title_1",
                             "type": "string",
                             "format": "text",
@@ -881,6 +866,21 @@
                     "value": [],
                     "minLength": 1,
                     "maxLength": 5
+                },
+                {
+                    "id": "height",
+                    "type": "string",
+                    "format": "text",
+                    "label": "height",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": "250",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "5"
                 }
             ]
         }
