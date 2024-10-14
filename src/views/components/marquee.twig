@@ -1,23 +1,22 @@
 <div class="marquee">
-        <p>Scrolling Text Marquee - A Simple CSS Demonstration</p>
+        <p>{{ component.marquee_text }}</p>
     </div>
 
 <style>
 .marquee {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-            border: 1px solid rgba(0, 0, 0, .15);
+            /*box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+             Full width of its parent */
             background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, .15);
             overflow: hidden;
             position: relative;
             height: 50px;
-            width: 100%;
-            /* Full width of its parent */
-            white-space: nowrap;
+            width: 100vw;
         }
 
         .marquee p {
-            position: absolute;
-            width: auto;
+            /* position: absolute;
+            width: auto; */
             height: 100%;
             margin: 0;
             line-height: 50px;
@@ -25,7 +24,8 @@
             /* Start off the right edge */
             transform: translateX(100%);
             /* Animate to the left */
-            animation: scroll-left 20s linear infinite;
+            animation: scroll-left 10s linear infinite;
+            animation-duration: {{ component.marquee_speed }}
         }
 
         @keyframes scroll-left {
