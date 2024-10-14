@@ -1,6 +1,7 @@
 <div class="marquee">
-        <p style="animation-duration: {{ component.marquee_speed }}">
-        {{ component.marquee_text }}</p>
+        <p style="animation-duration: {{ component.marquee_speed }}s">
+            {{ component.marquee_text }}
+        </p>
     </div>
 
 <style>
@@ -13,14 +14,15 @@
             position: relative;
             height: 50px;
             width: 100vw;
+            background:{{ component.marquee_speed }}
         }
 
         .marquee p {
             /* position: absolute;
-            width: auto; */
-            height: 100%;
-            margin: 0;
             line-height: 50px;
+            height: 100%;
+            width: auto; */
+            margin: 0;
             text-align: center;
             /* Start off the right edge */
             transform: translateX(100%);
