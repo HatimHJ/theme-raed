@@ -1,5 +1,6 @@
 <div class="marquee">
-        <p>{{ component.marquee_text }}</p>
+        <p style="animation-duration: {{ component.marquee_speed }}">
+        {{ component.marquee_text }}</p>
     </div>
 
 <style>
@@ -24,8 +25,8 @@
             /* Start off the right edge */
             transform: translateX(100%);
             /* Animate to the left */
-            animation: scroll-left 10s linear infinite;
-            animation-duration: {{ component.marquee_speed }}
+            animation: scroll-left  linear infinite;
+            
         }
 
         @keyframes scroll-left {
