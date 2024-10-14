@@ -886,7 +886,7 @@
         },
         {
             "key": "cca67072-a95f-443e-843a-1d45bb7c11a5",
-            "title": "marquee",
+            "title": "نص اعلاني متحرك",
             "icon": "sicon-ellipsis-filled",
             "path": "marquee",
             "fields": [
