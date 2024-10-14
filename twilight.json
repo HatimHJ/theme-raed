@@ -915,7 +915,7 @@
                     "labelHTML": null,
                     "placeholder": "Input an integer number between 5 and 50.",
                     "icon": "sicon-hashtag",
-                    "value": null,
+                    "value": 10,
                     "required": false,
                     "minimum": "3",
                     "maximum": "1000"
