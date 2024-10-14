@@ -3,12 +3,12 @@
             {{ component.marquee_text }}
         </h6>
     </div>
-
+{{{{ component.marquee_rtl ? 'من اليمين الى اليسار' : 'من اليسار الى اليمين' }}}}
 <style>
 .marquee {
             /*box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
              Full width of its parent */
-            background-color: #ffffff;
+            background-color: {{ component.marquee_bg_color }};
             border: 1px solid rgba(0, 0, 0, .15);
             border-right: none;
             border-left: none;
@@ -26,20 +26,21 @@
             margin: 0;
             text-align: center;
             /* Start off the right edge */
-            transform: translateX(100%);
+            transform: translateX(-100%);
             /* Animate to the left */
-            animation: scroll-left  linear infinite;
+            animation: scroll-left  ease infinite;
+            color:{{ component.marquee_text_color }};
             animation-duration: {{ component.marquee_speed }}s
             
         }
 
         @keyframes scroll-left {
             0% {
-                transform: translateX(100%);
+                transform: translateX(-100%);
             }
 
             100% {
-                transform: translateX(-100%);
+                transform: translateX(100%);
             }
         }
 
