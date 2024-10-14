@@ -943,6 +943,18 @@
                     "icon": "sicon-format-fill",
                     "value": "#ffffff",
                     "required": false
+                },
+                {
+                    "id": "marquee_rtl",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "marquee_rtl",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
                 }
             ]
         }
