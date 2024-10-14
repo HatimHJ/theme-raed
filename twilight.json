@@ -889,7 +889,23 @@
             "title": "marquee",
             "icon": "sicon-ellipsis-filled",
             "path": "marquee",
-            "fields": []
+            "fields": [
+                {
+                    "id": "marquee_text",
+                    "type": "string",
+                    "format": "text",
+                    "label": "النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": true,
+                    "minLength": 6,
+                    "maxLength": "100"
+                }
+            ]
         }
     ],
     "support_url": "",
