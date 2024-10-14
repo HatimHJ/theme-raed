@@ -904,6 +904,21 @@
                     "required": true,
                     "minLength": 6,
                     "maxLength": "100"
+                },
+                {
+                    "id": "marquee_speed",
+                    "type": "number",
+                    "format": "integer",
+                    "inputType": "number",
+                    "label": "السرعة",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Input an integer number between 5 and 50.",
+                    "icon": "sicon-hashtag",
+                    "value": null,
+                    "required": false,
+                    "minimum": 0,
+                    "maximum": "3"
                 }
             ]
         }
