@@ -1,8 +1,4 @@
-<div class="marquee">
-        <p>Scrolling Text Marquee - A Simple CSS Demonstration</p>
-    </div>
-
-<style>
+-  marquee شريط متحرك
 .marquee {
             box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
             border: 1px solid rgba(0, 0, 0, .15);
@@ -37,5 +33,3 @@
                 transform: translateX(-100%);
             }
         }
-
-</style>
