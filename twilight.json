@@ -963,7 +963,92 @@
             "title": "قسم من جزئين",
             "icon": "sicon-store",
             "path": "custom.3-card-2-section",
-            "fields": []
+            "fields": [
+                {
+                    "id": "custom_cards",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "المحتوى",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "custom_cards.card_btn_text",
+                            "type": "string",
+                            "format": "text",
+                            "label": "نص الزر",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "20"
+                        },
+                        {
+                            "id": "custom_cards.card_btn_url",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "رابط الزر",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "custom_cards.card_text",
+                            "type": "string",
+                            "format": "text",
+                            "label": "العنوان",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "custom_cards.card_bg_color",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون الخلفية",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-format-fill",
+                            "value": "#004956",
+                            "required": true
+                        },
+                        {
+                            "id": "custom_cards.card_bg_image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "الخلفية",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "minLength": "3",
+                    "maxLength": "3"
+                }
+            ]
         }
     ],
     "support_url": "",
