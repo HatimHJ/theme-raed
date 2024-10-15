@@ -957,6 +957,13 @@
                     "required": false
                 }
             ]
+        },
+        {
+            "key": "605357cd-1b42-43b8-b20e-190bc1d471f7",
+            "title": "قسم من جزئين",
+            "icon": "sicon-store",
+            "path": "custom.3-card-2-section",
+            "fields": []
         }
     ],
     "support_url": "",
