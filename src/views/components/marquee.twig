@@ -1,5 +1,5 @@
 <div class="marquee">
-        <h6 >
+        <h6 class="{{ component.marquee_rtl ? 'rtl-marquee' : 'ltr-marquee'  }}">
             {{ component.marquee_text }}
         </h6>
     </div>
@@ -26,21 +26,40 @@
             text-align: center;
             /* Start off the right edge */
             
-            transform: {{ component.marquee_rtl ? translateX(100%) : translateX(-100%) }};
-            /* Animate to the left */
+            /* Animate to the left 
+            transform: translateX(100%) ;
             animation: scroll-left  ease infinite;
+            
+            */
             color:{{ component.marquee_text_color }};
             animation-duration: {{ component.marquee_speed }}s;
             
         }
+        .rtl-marquee{
+            transform: translateX(100%) ;
+            animation: scroll-left  ease infinite;
+        }
+        .ltr-marquee{
+            transform: translateX(-100%) ;
+            animation: scroll-right  ease infinite;
+        }
 
-        @keyframes scroll-left {
+        @keyframes scroll-right {
             0% {
-                transform: {{ component.marquee_rtl ? translateX(100%) : translateX(-100%) }};
+                transform:  translateX(100%) ;
             }
 
             100% {
-                transform: {{ component.marquee_rtl ? translateX(-100%) : translateX(100%) }};
+                transform:  translateX(-100%) ;
+            }
+        }
+        @keyframes scroll-left {
+            0% {
+                transform:  translateX(100%) ;
+            }
+
+            100% {
+                transform:  translateX(-100%) ;
             }
         }
 
