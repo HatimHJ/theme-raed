@@ -948,7 +948,7 @@
                     "id": "marquee_rtl",
                     "type": "boolean",
                     "format": "switch",
-                    "label": "marquee_rtl",
+                    "label": "من اليمين الى اليسار",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
