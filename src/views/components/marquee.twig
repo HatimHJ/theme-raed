@@ -1,5 +1,5 @@
-<div class="marquee">
-        <h6 class="{{ component.marquee_rtl ? 'rtl-marquee' : 'ltr-marquee'  }}">
+<div class="marquee ">
+        <h6 class="{{ component.marquee_rtl ? 'rtl-marquee' : 'ltr-marquee'  }} animate-ping">
             {{ component.marquee_text }}
         </h6>
     </div>
@@ -37,11 +37,11 @@
         }
         .rtl-marquee{
             transform: translateX(100%) ;
-            animation: scroll-left  ease infinite;
+            animation: scroll-right  ease infinite;
         }
         .ltr-marquee{
             transform: translateX(-100%) ;
-            animation: scroll-right  ease infinite;
+            animation: scroll-left  ease infinite;
         }
 
         @keyframes scroll-right {
